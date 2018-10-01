@@ -1,0 +1,7 @@
+{
+  "name": "NorthbricksLogin",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
