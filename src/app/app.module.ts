@@ -9,8 +9,9 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginPageModule } from './login/login.module';
-import { Deeplinks } from '@ionic-native/deeplinks';
-
+import { Deeplinks } from '@ionic-native/deeplinks/ngx';
+import { SafariViewController } from '@ionic-native/safari-view-controller/ngx';
+import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -23,6 +24,8 @@ import { Deeplinks } from '@ionic-native/deeplinks';
   providers: [
     StatusBar,
     SplashScreen,
+    SafariViewController,
+    InAppBrowser,
     Deeplinks,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
